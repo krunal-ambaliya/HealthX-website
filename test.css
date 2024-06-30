@@ -1,0 +1,205 @@
+.container{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+.animation {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(20px);
+    }
+}
+
+
+.p-card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+  }
+
+  
+.card-header img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    transition: transform .3s ease-in-out;
+    transform: scale(1);
+
+  }
+.card-header{
+    overflow: hidden;
+}
+  
+.card-header:hover img{
+    transform: scale(1.4);
+}
+
+
+.container {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+
+  footer{
+    background-image: url(css/footer_bg.svg);
+    background-repeat: no-repeat;
+    background-size: 120%; /* Ensures the image covers the entire footer */
+    background-position: center; /* Centers the image within the footer */
+    
+    text-align: center;
+}
+
+.footer {
+    max-height: 30rem;
+    
+    color: white;
+    padding: 50px 20px;
+    position: relative;
+}
+.f-container{
+    
+    display: flex;
+    width: 1040px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.footer-bottom {
+    padding-top: 56px;
+}
+.footer-content {
+    max-height: 19rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+.footer-logo, .footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+.footer-logo img {
+    max-width: 14rem;
+
+}
+.footer-logo input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+.footer-logo button {
+    padding: 10px;
+    background: #68b736;
+    border: none;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.footer-column h3 {
+    margin-top: 0;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin: 10px 0;
+}
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control::placeholder{
+    color: var(--pure);
+}
+.input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control {
+    
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+    margin-bottom: 0;
+    background-color: #54741b ;
+    color: var(--light);
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem !important;
+}
+.input-group {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+.login-link a{
+    color: var(--primary);
+    font-weight: 600    ;
+}
+
+@media (max-width: 900px){
+    .footer{
+        background-size: contain;
+        background-position: bottom;
+        padding: 30px 0;
+    }
+}
+
+
+@media only screen and (min-width: 1020px) {
+	.f-container{
+		width:100%;
+        background-position-y:  -26px;
+	}      
+      
+} 
+@media(max-width: 1020px){
+	footer{
+        background-position: center;
+        width: 52rem;
+		height: auto !important;
+	}
+	h2{
+		font-size: 30px;
+	}
+}
